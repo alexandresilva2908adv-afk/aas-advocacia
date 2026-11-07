@@ -1,48 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AAS Advocacia | Alexandre Augusto da Silva</title>
-
-<style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f5f5f5;
     color:#333;
     line-height:1.6;
 }
 
-/* CABEÇALHO */
-
 header{
+    width:100%;
+    margin:0;
+    padding:0;
     background:#081a36;
-    text-align:center;
-    padding:30px 20px;
 }
 
 header img{
     width:100%;
-    max-width:1100px;
     display:block;
-    margin:auto;
-    border-radius:10px;
 }
 
 /* CONTEÚDO */
 
 .container{
     max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+    margin:40px auto;
+    padding:0 20px;
 }
 
 .card{
@@ -50,21 +39,21 @@ header img{
     padding:30px;
     margin-bottom:25px;
     border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.10);
+    box-shadow:0 2px 12px rgba(0,0,0,.10);
 }
 
 .card h2{
     color:#081a36;
     margin-bottom:15px;
+    font-size:32px;
 }
 
-/* ÁREAS DE ATUAÇÃO */
+/* ÁREAS */
 
 .areas{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:20px;
-    margin-top:20px;
 }
 
 .area{
@@ -73,11 +62,6 @@ header img{
     padding:25px;
     border-radius:10px;
     text-align:center;
-    transition:.3s;
-}
-
-.area:hover{
-    transform:translateY(-5px);
 }
 
 .area h3{
@@ -85,41 +69,37 @@ header img{
     margin-bottom:10px;
 }
 
-/* BOTÃO WHATSAPP */
+/* BOTÃO */
 
 .btn{
     display:inline-block;
     background:#25D366;
     color:white;
     text-decoration:none;
-    padding:15px 30px;
+    padding:16px 32px;
     border-radius:8px;
     font-weight:bold;
     margin-top:15px;
 }
 
-.btn:hover{
-    opacity:.9;
-}
-
-/* BOTÃO FLUTUANTE */
+/* WHATSAPP FLUTUANTE */
 
 .whatsapp-flutuante{
     position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:white;
+    right:20px;
+    bottom:20px;
     width:65px;
     height:65px;
     border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:32px;
+    background:#25D366;
+    color:white;
     text-decoration:none;
-    box-shadow:0 4px 15px rgba(0,0,0,.3);
-    z-index:1000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 /* RODAPÉ */
@@ -128,7 +108,7 @@ footer{
     background:#081a36;
     color:white;
     text-align:center;
-    padding:35px 20px;
+    padding:40px 20px;
 }
 
 footer h3{
@@ -138,128 +118,91 @@ footer h3{
 
 .destaque{
     color:#d4af37;
-    margin-top:10px;
     font-weight:bold;
 }
 
-</style>
+/* ===================== */
+/* RESPONSIVIDADE MOBILE */
+/* ===================== */
 
-</head>
+@media (max-width: 768px){
 
-<body>
+    .container{
+        padding:15px;
+        margin:20px auto;
+    }
 
-<header>
+    .card{
+        padding:20px;
+        border-radius:10px;
+    }
 
-    <img
-        src="logo-aas.png.png"
-        alt="AAS Advocacia">
+    .card h2{
+        font-size:26px;
+        text-align:center;
+    }
 
-</header>
+    .areas{
+        grid-template-columns:1fr;
+    }
 
-<div class="container">
+    .area{
+        padding:20px;
+    }
 
-    <div class="card">
+    .area h3{
+        font-size:20px;
+    }
 
-        <h2>Sobre o Escritório</h2>
+    .area p{
+        font-size:15px;
+    }
 
-        <p>
-            A atuação do escritório é pautada pela ética,
-            responsabilidade, transparência e dedicação na defesa dos
-            direitos e interesses dos clientes.
-        </p>
+    .btn{
+        width:100%;
+        text-align:center;
+        padding:18px;
+        font-size:16px;
+    }
 
-        <br>
+    footer{
+        padding:30px 15px;
+    }
 
-        <p>
-            Atendimento jurídico personalizado, consultivo e contencioso,
-            com atuação estratégica voltada à melhor solução para cada caso.
-        </p>
+    header img{
+        width:100%;
+        height:auto;
+        display:block;
+    }
 
-    </div>
+    .whatsapp-flutuante{
+        width:60px;
+        height:60px;
+        font-size:28px;
+        right:15px;
+        bottom:15px;
+    }
 
-    <div class="card">
+}
 
-        <h2>Áreas de Atuação</h2>
+/* CELULARES PEQUENOS */
 
-        <div class="areas">
+@media (max-width: 480px){
 
-            <div class="area">
-                <h3>⚖ Direito Criminal</h3>
-                <p>
-                    Acompanhamento em delegacias, inquéritos policiais,
-                    audiências de custódia, defesa criminal e execução penal.
-                </p>
-            </div>
+    .card h2{
+        font-size:22px;
+    }
 
-            <div class="area">
-                <h3>👨‍👩‍👧 Direito de Família</h3>
-                <p>
-                    Divórcio, pensão alimentícia, guarda, visitas,
-                    união estável, inventário e sucessões.
-                </p>
-            </div>
+    .area h3{
+        font-size:18px;
+    }
 
-            <div class="area">
-                <h3>🛒 Direito do Consumidor</h3>
-                <p>
-                    Negativação indevida, cobranças abusivas,
-                    problemas bancários e indenizações.
-                </p>
-            </div>
+    .area p{
+        font-size:14px;
+    }
 
-        </div>
+    body{
+        font-size:15px;
+    }
 
-    </div>
-
-    <div class="card">
-
-        <h2>Contato</h2>
-
-        <p><strong>Advogado:</strong> Alexandre Augusto da Silva</p>
-
-        <p><strong>OAB/MG:</strong> 254.961</p>
-
-        <p><strong>Cidade:</strong> Belo Horizonte/MG</p>
-
-        <p><strong>E-mail:</strong> alexandresilva2908.adv@gmail.com</p>
-
-        <p><strong>WhatsApp:</strong> (31) 99003-5982</p>
-
-        <a
-            class="btn"
-            href="https://wa.me/5531990035982"
-            target="_blank">
-            Agendar Atendimento
-        </a>
-
-    </div>
-
-</div>
-
-<footer>
-
-    <h3>AAS ADVOCACIA</h3>
-
-    <p>
-        Alexandre Augusto da Silva
-    </p>
-
-    <p>
-        OAB/MG 254.961
-    </p>
-
-    <p class="destaque">
-        Compromisso, ética e excelência na defesa dos seus direitos.
-    </p>
-
-</footer>
-
-<a
-    class="whatsapp-flutuante"
-    href="https://wa.me/5531990035982"
-    target="_blank">
-    💬
-</a>
-
-</body>
-</html>
+}
