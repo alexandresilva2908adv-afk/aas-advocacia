@@ -25,47 +25,21 @@ content="index,follow">
 <meta name="theme-color"
 content="#081a36">
 
-<meta name="geo.region"
-content="BR-MG">
-
-<meta name="geo.placename"
-content="Belo Horizonte">
-
-<meta name="geo.position"
-content="-19.9167;-43.9345">
-
-<meta name="ICBM"
-content="-19.9167,-43.9345">
-
 <meta property="og:locale"
 content="pt_BR">
-
-<meta property="og:site_name"
-content="AAS Advocacia">
-
-<meta property="og:title"
-content="AAS Advocacia">
-
-<meta property="og:description"
-content="Advocacia e Assessoria Jurídica em Belo Horizonte/MG">
-
-<meta property="og:image"
-content="designer-4.png">
-
-<meta property="og:image:alt"
-content="AAS Advocacia - Alexandre Augusto da Silva">
-
-<meta property="og:url"
-content="https://alexandresilva2908adv-afk.github.io/aas-advocacia/">
-
-<meta property="og:type"
-content="website">
+<meta property="og:site_name" content="AAS Advocacia">
+<meta property="og:title" content="AAS Advocacia">
+<meta property="og:description" content="Advocacia e Assessoria Jurídica em Belo Horizonte/MG">
+<meta property="og:image" content="banner-principal.png.png">
+<meta property="og:image:alt" content="AAS Advocacia - Alexandre Augusto da Silva">
+<meta property="og:url" content="https://alexandresilva2908adv-afk.github.io/aas-advocacia/">
+<meta property="og:type" content="website">
 
 <link rel="canonical"
 href="https://alexandresilva2908adv-afk.github.io/aas-advocacia/">
 
 <link rel="icon"
-href="designer-4.png">
+href="banner-principal.png.png">
 
 <script type="application/ld+json">
 {
@@ -77,14 +51,7 @@ href="designer-4.png">
   "email":"alexandresilva2908.adv@gmail.com",
   "founder":"Alexandre Augusto da Silva",
   "areaServed":"Brasil",
-  "priceRange":"$$",
-  "image":"designer-4.png",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Belo Horizonte",
-    "addressRegion":"MG",
-    "addressCountry":"BR"
-  },
+  "image":"banner-principal.png.png",
   "serviceType":[
     "Direito Criminal",
     "Direito de Família",
@@ -121,7 +88,10 @@ scroll-margin-top:90px;
 .navbar{
 background:#081a36;
 padding:18px;
-box-shadow:0 2px 10px rgba(0,0,0,.2);
+box-shadow:0 2px 10px rgba(0,0,0,.20);
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .navbar ul{
@@ -144,19 +114,20 @@ color:#d4af37;
 }
 
 header{
-margin:0;
-padding:0;
+background:#081a36;
 }
 
 header img{
 display:block;
 width:100%;
+max-width:1920px;
 height:auto;
+margin:0 auto;
 }
 
 .hero{
 background:#081a36;
-padding:15px 20px 30px;
+padding:20px 20px 35px;
 text-align:center;
 color:white;
 }
@@ -167,15 +138,15 @@ margin:auto;
 }
 
 .hero h1{
-font-size:30px;
-line-height:1.3;
-margin-bottom:15px;
+font-size:32px;
 color:#d4af37;
+margin-bottom:15px;
+line-height:1.3;
 }
 
 .hero p{
-font-size:18px;
-margin-bottom:25px;
+font-size:20px;
+margin-bottom:30px;
 }
 
 .cta{
@@ -187,6 +158,7 @@ padding:20px 40px;
 border-radius:12px;
 font-weight:700;
 font-size:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.20);
 transition:.3s;
 }
 
@@ -206,6 +178,7 @@ padding:35px;
 margin-bottom:30px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
+overflow:hidden;
 }
 
 .card h2{
@@ -226,6 +199,13 @@ padding:25px;
 border-radius:15px;
 text-align:center;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat strong{
+display:block;
+font-size:22px;
+margin-bottom:10px;
+color:#081a36;
 }
 
 .vantagens{
@@ -253,10 +233,14 @@ margin-top:20px;
 .area{
 background:#081a36;
 color:white;
-padding:30px;
+padding:25px;
 border-radius:12px;
 text-align:center;
 box-shadow:0 6px 15px rgba(0,0,0,.20);
+min-height:220px;
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
 .area h3{
@@ -267,7 +251,16 @@ margin-bottom:15px;
 .contato-centralizado{
 text-align:center;
 }
-  .btn{
+
+.contato-centralizado p{
+margin-bottom:12px;
+}
+
+.contato-centralizado a{
+word-break:break-word;
+}
+
+.btn{
 display:inline-block;
 background:#128C7E;
 padding:18px 30px;
@@ -314,9 +307,41 @@ z-index:9999;
 
 @media(max-width:768px){
 
+.navbar{
+padding:15px;
+}
+
 .navbar ul{
-gap:15px;
+gap:12px;
 font-size:14px;
+}
+
+header img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.hero{
+padding:20px 15px 30px;
+}
+
+.hero h1{
+font-size:24px;
+line-height:1.4;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.7;
+}
+
+.container{
+padding:20px 15px;
+}
+
+.card{
+padding:25px 20px;
 }
 
 .stats{
@@ -330,13 +355,24 @@ grid-template-columns:1fr;
 .cta,
 .btn{
 width:100%;
+max-width:400px;
+display:block;
+margin:auto;
 text-align:center;
 }
 
 .whatsapp{
-width:60px;
-height:60px;
-font-size:28px;
+width:65px;
+height:65px;
+font-size:30px;
+right:15px;
+bottom:15px;
+}
+
+footer{
+padding:40px 20px;
+font-size:15px;
+line-height:1.8;
 }
 
 }
@@ -344,7 +380,6 @@ font-size:28px;
 </style>
 
 </head>
-
 <body>
 
 <nav class="navbar">
@@ -359,7 +394,7 @@ font-size:28px;
 <header>
 
 <img
-src="designer-4.png"
+src="banner-principal.png.png"
 alt="AAS Advocacia - Alexandre Augusto da Silva"
 loading="eager"
 fetchpriority="high">
@@ -375,7 +410,7 @@ Advocacia Estratégica e Atendimento Personalizado
 </h1>
 
 <p>
-Atuação em Direito Criminal, Direito de Família, Inventário e Sucessões e Direito do Consumidor, com atendimento presencial em Belo Horizonte/MG e online para todo o Brasil.
+Atendimento jurídico estratégico, personalizado e comprometido com a defesa dos seus direitos. Atendimento presencial em Belo Horizonte/MG e online para todo o Brasil.
 </p>
 
 <a class="cta"
@@ -413,17 +448,17 @@ Sob a condução de Alexandre Augusto da Silva, OAB/MG 254.961, o atendimento é
 
 <div class="stat">
 <strong>Atendimento Online</strong>
-Atuação em todo o Brasil
+Atuação em todo o Brasil.
 </div>
 
 <div class="stat">
 <strong>Transparência</strong>
-Comunicação clara e objetiva
+Comunicação clara e objetiva.
 </div>
 
 <div class="stat">
 <strong>Atendimento Personalizado</strong>
-Estratégia adequada para cada situação
+Estratégia adequada para cada situação.
 </div>
 
 </section>
