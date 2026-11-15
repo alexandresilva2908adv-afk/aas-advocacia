@@ -1,5 +1,11 @@
-AAS Advocacia — Inventário SEO
-Envie somente: inventario-documentos-como-funciona.html, inventario-e-sucessoes.html, sitemap.xml para a raiz do repositório.
-Preserve index.html, banner-principal.png.png, robots.txt e o arquivo de verificação do Google.
-Antes de publicar, revise o conteúdo jurídico e confirme se as informações sobre atendimento permanecem corretas.
-Depois, teste a página e solicite indexação apenas da nova URL.
+AAS ADVOCACIA — ARTIGO SOBRE PRISÃO EM FLAGRANTE
+
+1. Revise o texto e a legislação antes de publicar.
+2. No GitHub, faça backup do sitemap.xml atual.
+3. Envie SOMENTE prisao-em-flagrante-direitos.html e sitemap.xml para a raiz do repositório aas-advocacia.
+4. Preserve banner-principal.png.png e o arquivo de verificação do Google.
+5. Confira a nova página após o commit.
+6. Para inserir link na página Direito Criminal existente, edite direito-criminal.html e adicione um link para prisao-em-flagrante-direitos.html em local apropriado. Este pacote NÃO substitui direito-criminal.html para evitar perda de conteúdo e da logomarca.
+7. Solicite a indexação somente da URL nova no Search Console.
+
+ATENÇÃO: sitemap contém 8 URLs conforme histórico do projeto; confirme que todas correspondem às páginas efetivamente publicadas.
