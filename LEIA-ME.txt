@@ -1,10 +1,5 @@
-AAS Advocacia — publicação de conteúdo sobre pensão alimentícia atrasada
-
-1. Faça backup do arquivo direito-de-familia.html atual.
-2. Envie os 3 arquivos desta pasta à RAIZ do repositório GitHub aas-advocacia.
-3. Substitua somente direito-de-familia.html e sitemap.xml; pensao-alimenticia-atrasada.html é novo.
-4. NÃO remova o banner-principal.png.png, index.html ou arquivo de verificação Google.
-5. Confirme que a nova página abre e que o link aparece na página de Família.
-6. Solicite indexação da URL nova no Search Console, uma única vez.
-
-Conteúdo informativo; revise antes de publicar.
+AAS Advocacia — Inventário SEO
+Envie somente: inventario-documentos-como-funciona.html, inventario-e-sucessoes.html, sitemap.xml para a raiz do repositório.
+Preserve index.html, banner-principal.png.png, robots.txt e o arquivo de verificação do Google.
+Antes de publicar, revise o conteúdo jurídico e confirme se as informações sobre atendimento permanecem corretas.
+Depois, teste a página e solicite indexação apenas da nova URL.
