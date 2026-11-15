@@ -1,10 +1,10 @@
-AAS Advocacia - atualização SEO
+AAS Advocacia — publicação de conteúdo sobre pensão alimentícia atrasada
 
-1. No repositório GitHub aas-advocacia, faça backup do index.html atual.
-2. Envie os arquivos HTML, sitemap.xml e robots.txt deste pacote para a raiz do repositório, substituindo apenas o index.html existente.
-3. NÃO exclua banner-principal.png.png nem os demais arquivos existentes. O novo index.html mantém a referência a esse banner.
-4. Aguarde o GitHub Pages publicar e teste a página inicial e as quatro páginas novas.
-5. No Search Console, abra Sitemaps e envie: sitemap.xml (na propriedade do prefixo /aas-advocacia/).
-6. Verifique a indexação das novas URLs posteriormente. Não há garantia de posicionamento.
-7. Revise a exatidão das áreas de atuação e da disponibilidade de salas da OAB antes de publicar.
-8. Atenção: robots.txt em /aas-advocacia/ não controla o host inteiro em GitHub Pages; para este projeto, é apenas informativo. A indexação das páginas depende dos links, do sitemap e dos mecanismos de busca.
+1. Faça backup do arquivo direito-de-familia.html atual.
+2. Envie os 3 arquivos desta pasta à RAIZ do repositório GitHub aas-advocacia.
+3. Substitua somente direito-de-familia.html e sitemap.xml; pensao-alimenticia-atrasada.html é novo.
+4. NÃO remova o banner-principal.png.png, index.html ou arquivo de verificação Google.
+5. Confirme que a nova página abre e que o link aparece na página de Família.
+6. Solicite indexação da URL nova no Search Console, uma única vez.
+
+Conteúdo informativo; revise antes de publicar.
