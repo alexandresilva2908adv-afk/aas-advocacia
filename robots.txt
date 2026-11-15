@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexandresilva2908adv-afk.github.io/aas-advocacia/sitemap.xml
