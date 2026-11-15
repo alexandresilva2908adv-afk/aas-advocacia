@@ -1,3 +1,6 @@
-AAS Advocacia — Atualização de link interno
+AAS Advocacia — SEO Direito do Consumidor
 
-Envie APENAS direito-criminal.html para a raiz do repositório GitHub aas-advocacia, substituindo o arquivo existente. Não exclua imagens nem outros arquivos. O banner banner-principal.png.png foi preservado. O artigo prisao-em-flagrante-direitos.html deve continuar publicado.
+Publique na RAIZ do repositório GitHub estes três arquivos: negativacao-indevida-direitos.html, direito-do-consumidor.html e sitemap.xml.
+Preserve banner-principal.png.png, index.html, robots.txt e o arquivo de verificação Google.
+Após o commit, abra a página nova e verifique o link na página de Direito do Consumidor.
+Revise juridicamente o artigo antes da publicação. O sitemap pode continuar com erro no Search Console; não reenvie repetidamente.
